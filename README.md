@@ -24,10 +24,12 @@ python build_video_review_page.py --export-site
 ```powershell
 git add -A
 git commit -m "Update video review data"
-git push
+git -c http.proxy= -c https.proxy= push
 ```
 
 GitHub Pages 会在推送后自动发布新版本。
+
+这里显式关闭的是这一次 Git 命令的旧代理设置，不会改动 Windows 或其他项目的全局代理。
 
 ## GitHub 授权备用方案
 

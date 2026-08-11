@@ -28,3 +28,21 @@ git push
 ```
 
 GitHub Pages 会在推送后自动发布新版本。
+
+## GitHub 授权备用方案
+
+Codex 内置 GitHub 插件如果无法加载，可直接使用本机已安装的 GitHub CLI：
+
+```powershell
+gh auth login --hostname github.com --git-protocol https --web --clipboard
+```
+
+命令会复制一次性设备码。浏览器回调异常时，可在手机或其他已登录 GitHub 的设备访问 <https://github.com/login/device>，粘贴设备码并确认。
+
+如果 GitHub CLI 设备授权不可用，还可以使用 Git for Windows 自带的 Credential Manager：
+
+```powershell
+git credential-manager github login --device
+```
+
+个人访问令牌只作为最后备选；不要把令牌写入仓库、脚本、远程地址或命令历史。

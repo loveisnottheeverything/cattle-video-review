@@ -2,6 +2,12 @@
 
 这是比赛视频素材理解结果的静态展示站点，可直接通过 GitHub Pages 发布。
 
+## 在线展示
+
+**[打开牧场视频证据台](https://loveisnottheeverything.github.io/cattle-video-review/)**
+
+页面支持深色与浅色主题，可在电脑、平板和手机浏览器中直接审阅素材。
+
 ## 公开内容
 
 - 170 条有效素材的结构化理解
